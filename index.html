@@ -6,136 +6,330 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Scobes</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous"> bootstrap 4 alpha-->
+  <script src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<div class="container-fluid" align="center">
-<div class="row">
-      <div class="col-md-12" align="center"><h1>Anthony Escobar<small></small></h1></div>
-</div>
-
-  <div class="jumbotron" align="center">
-    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <p><br><a class="btn btn-primary btn-lg" href="#" role="button"><span class="glyphicon glyphicon-file"></span> Portfolio</a>
+<div class="container-fluid" align="center"> <!-- heading -->
+  <div class="row"><div class="col-md-12" align="center"><h1>Anthony Escobar
+    <small>
+      <br><a href="https://github.com/anthonyescobar">https://github.com/anthonyescobar</a>
+    </small></h1></div>
   </div>
 </div>
 
-<div class="container" align="left">
+<div class="container" align="left"> <!-- content -->
 
+  <div class="row" align="left"> <!-- row container -->
 
-  <div class="row" align="left">
-    <h2>Experience</h2>
-    <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse00"><h4>Tech &amp; Internships</h4></a>
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse01"><h4>Aquatics</h4></a>
-        </h4>
+    <div class="col-xs-12 col-sm-4 col-sm-push-8 col-md-6 col-md-push-6 col-lg-7 col-lg-push-5" align="left"> <!-- sidebar -->
+      <div class="panel-group" id="accordion">
+
+          <h2 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSide01"><h3>Languages<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h3></a>
+
+      <div id="collapseSide01" class="panel-collapse collapse in"> <!-- Langs -->
+        <div class="panel-body">
+
+        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
+          <h3>Java</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar"
+              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                Expert
+              </div>
+            </div>
+          </div>
+
+        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
+          <h3>JavaScript</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar"
+              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                Proficient
+              </div>
+            </div>
+          </div>
+
+        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
+          <h3>HTML/CSS</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar"
+              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                Proficient
+              </div>
+            </div>
+          </div>
+
+        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
+          <h3>Python</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar"
+              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                Familiar
+              </div>
+            </div>
+          </div>
+
+        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
+          <h3>C++</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar"
+              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                Familiar
+              </div>
+            </div>
+          </div>
+
+        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
+          <h3>OCaml</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar"
+              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:45%">
+                Familiar
+              </div>
+            </div>
+          </div>
+
+        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
+          <h3>C</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar"
+              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                Familiar
+              </div>
+            </div>
+          </div>
+
+        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
+          <h3>NASM</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar"
+              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                Familiar
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
-      <div id="collapse00" class="panel-collapse collapse">
+          <h2 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSide02"><h3>Operational<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h3></a></h2>
+
+      <div id="collapseSide02" class="panel-collapse collapse in"> <!-- Ops -->
         <div class="panel-body">
-          <h3>Frontend / Backend Software Intern<small> <b>FanFlex</b></small></h3>
-          <p>Frontend website management and development: FanFlex.com
-            <br>Backend PyroCMS webapp &amp; iOS app integration debugging.</p>
-          <h3>Technical Writer<small> <b>Loyola Marymount University ITS.</b></small></h3>
-            <p>Created user-friendly documents of LMU System Admin Software.</p>
-        </div>
-        <div class="panel-footer">
+
+        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
+          <h3>Linux/Unix</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar"
+              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                Expert
+              </div>
+            </div>
+          </div>
+
+        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
+          <h3>Bash</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar"
+              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                Proficient
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div id="collapse01" class="panel-collapse collapse">
+          <h2 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSide03"><h3>Other<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h3></a>
+
+      <div id="collapseSide03" class="panel-collapse collapse in"> <!-- Other -->
         <div class="panel-body">
-          <h3>Certified Swim Instructor <small> Burns Recreation Center</small></h3>
-          <p>Private swim instructor for Loyola Marymount’s recreation center.
-            <br>Generally teach ages 3-10 of varying skill levels.</p>
-          <h3>Co-Founder &amp; Coach <small> Creekside Water Polo Camp</small></h3>
-          <p>Outreach water polo camp at a community pool to introduce teenagers to the sport, have fun, and play in high school. Two week long sessions, multiple sessions a Summer. Beginner to advanced levels. Generally 6-12 students per session, aged 12-17.</p>
-          <h3>Swim Instructor &amp; Pre-Competitive Coach<small> De Anza Cupertino Aquatics (DACA)</small></h3>
-          <p>Instructed classes of up to four students of all ages, including adult classes, with beginner to advanced skill levels. Coached a pre-competitive class of up to 8 students. Led water babies classes for children under the age of 3 and their parent. Experience with instructing autistic students. </p>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>CPR/AED/First Aid Certified</h3>
+            <!-- <div class="progress">
+              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                Woo
+              </div>
+            </div> Progress bar not needed -->
+          </div>
         </div>
-        <div class="panel-footer">
-        </div>
+      </div>
+
       </div>
 
     </div>
-  </div>
-  </div>
 
-  <div class="row">
-    <h2>Education</h2>
-    <div class="panel-group" id="accordion">
+    <div class="col-xs-12 col-sm-8 col-sm-pull-4 col-md-6 col-md-pull-6 col-lg-5 col-lg-pull-7"> <!-- content column -->
+      <h2>Experience</h2>
+      <div class="panel-group" id="accordion"> <!-- Exp Accordion -->
+        <div class="panel panel-default"> <!-- Exp Internal -->
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse00"><h4>Industry</h4></a>
+            </h4>
+          </div>
+            <div id="collapse00" class="panel-collapse collapse in"> <!-- Tech Exp -->
+            <div class="panel-body">
 
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse10"><h3>Loyola Marymount University Los Angeles
-              <small><br>Bachelors of Science: Computer Science</small></h3></a>
-          </h3>
+              <h3>Frontend / Backend Software Intern<small> <br>FanFlex LLC</small></h3>
+              <p>Frontend website management and development: FanFlex.com
+                <br>Backend PyroCMS webapp &amp; iOS app integration debugging.</p>
+
+              <h3>Technical Writer<small> <br>Loyola Marymount University ITS.</small></h3>
+                <p>Created user-friendly documents of LMU System Admin Software.</p>
+            </div>
+            <div class="panel-footer">
+            </div>
+          </div>
         </div>
-        <div id="collapse10" class="panel-collapse collapse">
+
+        <div class="panel panel-default"> <!-- Exp Internal -->
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse01"><h4>Aquatics</h4></a>
+            </h4>
+          </div>
+            <div id="collapse01" class="panel-collapse collapse"> <!-- Aquatic Exp -->
           <div class="panel-body">
-            <h4>Relevant Courses</h4>
-            <p></p>
-              <ul>
-                <li>Theory of Computation</li>
-                <li>Data Structuress</li>
-                <li>Algorithms</li>
-                <li>Computer Systems Organization</li>
-                <li>Programming Languages</li>
-                <li>Logic Design</li>
-                <li>Methods of Proof</li>
-              </ul>
+            <h3>Certified Swim Instructor <small> <br>Burns Recreation Center</small></h3>
+            <p>Private swim instructor for Loyola Marymount’s recreation center.
+              <br>Generally teach ages 3-10 of varying skill levels.</p>
+
+            <h3>Co-Founder &amp; Coach <small> <br>Creekside Water Polo Camp</small></h3>
+            <p>Outreach water polo camp at a community pool to introduce teenagers to the sport, have fun, and play in high school. Two week long sessions, multiple sessions a Summer. Beginner to advanced levels. Generally 6-12 students per session, aged 12-17.</p>
+
+            <h3>Swim Instructor &amp; Pre-Competitive Coach<small> <br>De Anza Cupertino Aquatics (DACA)</small></h3>
+            <p>Instructed classes of up to four students of all ages, including adult classes, with beginner to advanced skill levels. Coached a pre-competitive class of up to 8 students. Led water babies classes for children under the age of 3 and their parent. Experience with instructing autistic students. </p>
           </div>
           <div class="panel-footer">
           </div>
         </div>
-      </div>
-
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse11"><h4>Foothill College
-              <small><br>Computer Science Electives</small></h4></a>
-          </h4>
-        </div>
-        <div id="collapse11" class="panel-collapse collapse">
-          <div class="panel-body">
-            <h4>Relevant Courses</h4>
-            <ul><li>Introduction to Unix/Linux</li></ul>
-          </div>
-          <div class="panel-footer">
-          </div>
         </div>
       </div>
 
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse12"><h4>Bellarmine College Prep</h4></a>
-          </h4>
-        </div>
-        <div id="collapse12" class="panel-collapse collapse">
-          <div class="panel-body">
-            <h2></h2>
-            <p>Panel Body</p>
+      <h2>Education</h2>
+      <div class="panel-group" id="accordion"> <!-- Education Accordion -->
+
+        <div class="panel panel-default"> <!-- LMU -->
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse10"><h3>Loyola Marymount University
+                <small><br>Bachelors of Science: Computer Science</small></h3></a>
+            </h3>
           </div>
-          <div class="panel-footer">
+          <div id="collapse10" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Relevant Courses</h4>
+              <p></p>
+                <ul>
+                  <li>Theory of Computation</li>
+                  <li>Data Structuress</li>
+                  <li>Algorithms</li>
+                  <li>Computer Systems Organization</li>
+                  <li>Programming Languages</li>
+                  <li>Logic Design</li>
+                  <li>Methods of Proof</li>
+                </ul>
+            </div>
+            <div class="panel-footer">
+            </div>
           </div>
         </div>
+
+        <div class="panel panel-default"><!-- Foothill -->
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse11"><h4>Foothill College
+                <small><br>Computer Science Electives</small></h4></a>
+            </h4>
+          </div>
+          <div id="collapse11" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Relevant Courses</h4>
+              <ul><li>Introduction to Unix/Linux</li></ul>
+            </div>
+            <div class="panel-footer">
+            </div>
+          </div>
+        </div>
+
       </div>
 
-    </div>
+      <h2>Leadership and Involvement</h2>
+      <div class="panel-group" id="accordion"> <!-- Leadership Accordion -->
+
+        <div class="panel panel-default"> <!-- ΔΣΦ -->
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse20"><h4>Delta Sigma Phi Fraternity (ΔΣΦ)
+                <small><br>Delta Mu Chapter - Loyola Marymount University</small></h4></a>
+            </h4>
+          </div>
+          <div id="collapse20" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h5>Positions</h5>
+              <h5>About Delta Sig</h5>
+              <h5>About DSP LMU</h5>
+              <h5>Initiated: December 2015</h5>
+            </div>
+            <div class="panel-footer">
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default"> <!-- Loyola Rugby -->
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse21"><h4>Executive Board
+                <small><br>Loyola Rugby of Loyola Marymount University</small></h4></a>
+            </h4>
+          </div>
+          <div id="collapse21" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h5>Positions</h5>
+              <h5>About Loyola Rugby</h5>
+              <h5>My Involvement</h5>
+            </div>
+            <div class="panel-footer">
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default"> <!-- Latino Overnight -->
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse22"><h4>Planning Committee
+                <small><br>Loyola Marymount University Latino Overnight</small></h4></a>
+            </h4>
+          </div>
+          <div id="collapse22" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h5>Event run by admissions to recruit Latino students to attend LMU</h5>
+            </div>
+            <div class="panel-footer">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- end main content column-->
+
+  </div> <!-- end encapule row -->
+</div>
+
+<div class="container-fluid" align="center"> <!-- Bottom -->
+  <div class="jumbotron" align="center"> <!-- JumboTron -->
+    <p><br><a class="btn btn-primary btn-lg" href="https://dl.dropboxusercontent.com/u/29750046/1%20Page%20Resume%20-%20OnlineVer.pdf" role="button"><span class="glyphicon glyphicon-file"></span> Resume PDF</a>
+    <p></p>
   </div>
-
-  <div class="row">
-    <h2>Leadership and Involvement<h2>
-  </div?
-
 </div>
 
 </body>
