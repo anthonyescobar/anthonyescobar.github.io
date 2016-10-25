@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Scobes</title>
+  <title>Anthony Escobar</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous"> bootstrap 4 alpha-->
-  <script src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </head>
 <body>
 
@@ -22,6 +22,142 @@
 </div>
 
 <div class="container" align="left"> <!-- content -->
+
+  <div class="row" align="center"> <!-- GitHub Modals-->
+    <br>
+    <h3>Sample Work</h3>
+    <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#tpsModal">Three Partition Solver (Java)</button>
+      <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#mocModal">Make Optimal Change (Java)</button>
+      <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#bcModal">Base Converter (Java)</button>
+      <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#btModal">Binary Tree (Java)</button>
+      <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#madlibModal">Madlibs (x86-Assembly &amp; C)</button>
+
+    <div class="modal fade" id="tpsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- ThreePartSolvModal -->
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <p>Algorithm created and implemented by me. A function to check if a list of 3n size of numbers can be partitioned into a list of n triples such that the sum of each triple was the same. This program can handle a list of size 84 before throwing overflow errors due to the factorial nature of the problem. A simpler but brute force solution exists in Python using intertools, however I created a custom solution in Java without using an intertools equivalent.</p>
+            <p>
+              ex.<br>
+              given: <br>[2,4,8,12,15,2,0,6,3,2,9,1] as 2 4 8 12 15 2 0 6 3 2 9 1 <br>
+              <br>
+              the answer is true because you can partition this list as follows:<br>[(4,3,9),(15,0,1),(8,2,6),(2,2,12)]<br>
+              <br>
+              while the answer would be false for: <br>[6, -1, 8, 3455, 11, 7]<br>
+              <br>
+              The answer is also false if the length of the input list is not a multiple of 3
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <a href="https://github.com/anthonyescobar/SampleWork/tree/master/ThreePartitionSolver%202:9:2016" class="btn btn-primary">View In GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="mocModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- MakeOpChange -->
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Make Optimal Change</h4>
+          </div>
+          <div class="modal-body">
+            <p>When given any amount and denominations, find the most optimal way for making the given amount using the given denominations. When no such way exists, IMPOSSIBLE is returned.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <a href="https://github.com/anthonyescobar/SampleWork/tree/master/MakeOptimalChange%204:23:2015" type="button" class="btn btn-primary">View In GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="bcModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- BaseConv -->
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Base Converter</h4>
+          </div>
+          <div class="modal-body" align="left">
+            <p>This program converts a given number from one base to another.</p>
+            <ul>
+              <li>args[0] represents the starting number;</li>
+              <li>args[1] represents the starting base;</li>
+              <li>args[2] represents the target base.</li>
+            </ul>
+            <b>Conversions to or from unity (base one) are not permitted. [Added 2015-09-19T17:13:00]</b></p>
+            <p>We require two or three arguments: the starting number will be specified using a special notation (below);
+            the starting and target bases must both be positive and will be given in decimal. The target base, if absent, defaults to decimal.
+            Note that the "digits" in the starting number must be consistent with the starting base. All arithmetic is done using Java type <i>long</i>, whose
+            largest value is <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html#MAX_VALUE">java.lang.Long.MAX_VALUE</a>.</p>
+            <p>In order to represent numbers from all possible bases, we employ a special notation:
+            a string like [d1][d2]...[dk] represents a k-digit number whose high-order digit has
+            value d1 (decimal), whose next digit has value d2 (decimal), etc. Here are some examples:
+                <ul>
+                    <li>The number 10110 would be represented [1][0][1][1][0].
+                    <li>The number 3204124 would be represented [3][2][0][4][1][2][4].
+                    <li>The base three number that means forty-seven would be represented [1][2][0][2].
+                    <li>The hexadecimal number for which we ordinarily write B3C would be represented [11][3][12].
+                </ul></p>
+
+            <p>So, to convert from 314 base five to base three, we would run <i>java BaseConverter [3][1][4] 5 3</i>.
+            To convert BBA326CF from hexadecimal to base twenty, we would run <i>java BaseConverter [11][11][10][3][2][6][12][15] 16 20</i>.
+            If we run <i>java BaseConverter [6][14] 26 14</i>, the output should be <i>[12][2]</i>.</p>
+            <p>The above-described special notation should also be used for outputting the target number.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <a href="https://github.com/anthonyescobar/SampleWork/tree/master/BaseConverter%209:24:2015" type="button" class="btn btn-primary">View in GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="btModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- BinTree -->
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Binary Tree</h4>
+          </div>
+          <div class="modal-body">
+            <p>No imports, only first principles. A data structure of objects within nodes in which each node in the tree can have up to two children nodes. My binary tree implements Iterable and iterates in preorder.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <a href="https://github.com/anthonyescobar/SampleWork/tree/master/BinaryTree%2012:3:2015" type="button" class="btn btn-primary">View in GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="madlibModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- MadlibModal -->
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Madlibs</h4>
+          </div>
+          <div class="modal-body">
+            <p>Arguments are processed in assembly and piped to the C file to compute. This program will take arguments and insert them into the given statement at its index number. This program supports up to 10 arguments to madlib (digits 0-9) and if the argmument length does not reach a given number then the number is unchanged.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <a href="https://github.com/anthonyescobar/SampleWork/tree/master/Madlibs%205:3:2016" type="button" class="btn btn-primary">View in GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
   <div class="row" align="left"> <!-- row container -->
 
@@ -36,7 +172,7 @@
           <div class="panel-body">
 
           <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h3>Java</h3>
+            <h4>Java</h4>
               <div class="progress">
                 <div class="progress-bar" role="progressbar"
                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
@@ -46,7 +182,7 @@
             </div>
 
           <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h3>JavaScript</h3>
+            <h4>JavaScript</h4>
               <div class="progress">
                 <div class="progress-bar" role="progressbar"
                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:75%">
@@ -56,7 +192,7 @@
             </div>
 
           <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h3>HTML/CSS</h3>
+            <h4>HTML/CSS</h4>
               <div class="progress">
                 <div class="progress-bar" role="progressbar"
                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:75%">
@@ -66,7 +202,7 @@
             </div>
 
           <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h3>Python</h3>
+            <h4>Python</h4>
               <div class="progress">
                 <div class="progress-bar" role="progressbar"
                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
@@ -76,7 +212,7 @@
             </div>
 
           <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h3>C++</h3>
+            <h4>C++</h4>
               <div class="progress">
                 <div class="progress-bar" role="progressbar"
                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
@@ -86,7 +222,7 @@
             </div>
 
           <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h3>OCaml</h3>
+            <h4>OCaml</h4>
               <div class="progress">
                 <div class="progress-bar" role="progressbar"
                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:45%">
@@ -96,7 +232,7 @@
             </div>
 
           <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h3>C</h3>
+            <h4>C</h4>
               <div class="progress">
                 <div class="progress-bar" role="progressbar"
                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
@@ -106,7 +242,7 @@
             </div>
 
           <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h3>NASM</h3>
+            <h4>NASM</h4>
               <div class="progress">
                 <div class="progress-bar" role="progressbar"
                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
@@ -127,7 +263,7 @@
         <div class="panel-body">
 
         <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-          <h3>Linux/Unix</h3>
+          <h4>Linux/Unix</h4>
             <div class="progress">
               <div class="progress-bar" role="progressbar"
               aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
@@ -137,7 +273,7 @@
           </div>
 
         <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-          <h3>Bash</h3>
+          <h4>Bash</h4>
             <div class="progress">
               <div class="progress-bar" role="progressbar"
               aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
@@ -147,13 +283,14 @@
           </div>
         </div>
       </div>
-        <div class="panel-heading">
-          <h2 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSide03"><h3>Other<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h3></a>
-          </h2>
-        </div>
 
-      <div id="collapseSide03" class="panel-collapse collapse in"> <!-- Other -->
+        <div class="panel-heading">
+        <h2 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseSide03"><h3>Other<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h3></a>
+        </h2>
+      </div>
+
+        <div id="collapseSide03" class="panel-collapse collapse"> <!-- Other -->
         <div class="panel-body">
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -232,6 +369,7 @@
           </div>
           <div id="collapse10" class="panel-collapse collapse">
             <div class="panel-body">
+              <h4>Expected Graduation: May 2018</h4>
               <h4>Relevant Courses</h4>
               <p></p>
                 <ul>
@@ -328,6 +466,7 @@
     </div> <!-- end main content column-->
 
   </div> <!-- end encapule row -->
+
 </div>
 
 <div class="container-fluid" align="center"> <!-- Bottom -->
