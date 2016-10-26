@@ -34,113 +34,113 @@
       <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#btModal">Binary Tree (Java)</button>
       <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#madlibModal">Madlibs (x86-Assembly &amp; C)</button>
 
-    <div class="modal fade" id="tpsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- ThreePartSolvModal -->
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Three Partition Solver</h4>
-          </div>
-          <div class="modal-body">
-            <p>Algorithm created and implemented by me. A function to check if a list of 3n size of numbers can be partitioned into a list of n triples such that the sum of each triple was the same. This program can handle a list of size 84 before throwing overflow errors due to the factorial nature of the problem. A simpler but brute force solution exists in Python using intertools, however I created a custom solution in Java without using an intertools equivalent.</p>
-            <p>
-              ex.<br>
-              given: <br>[2,4,8,12,15,2,0,6,3,2,9,1] as 2 4 8 12 15 2 0 6 3 2 9 1 <br>
-              <br>
-              the answer is true because you can partition this list as follows:<br>[(4,3,9),(15,0,1),(8,2,6),(2,2,12)]<br>
-              <br>
-              while the answer would be false for: <br>[6, -1, 8, 3455, 11, 7]<br>
-              <br>
-              The answer is also false if the length of the input list is not a multiple of 3
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <a href="https://github.com/anthonyescobar/SampleWork/tree/master/ThreePartitionSolver%202:9:2016" class="btn btn-primary">View In GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="mocModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- MakeOpChange -->
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Make Optimal Change</h4>
-          </div>
-          <div class="modal-body">
-            <p>When given any amount and denominations, find the most optimal way for making the given amount using the given denominations. When no such way exists, IMPOSSIBLE is returned.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <a href="https://github.com/anthonyescobar/SampleWork/tree/master/MakeOptimalChange%204:23:2015" type="button" class="btn btn-primary">View In GitHub</a>
+      <div class="modal fade" id="tpsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- ThreePartSolvModal -->
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Three Partition Solver</h4>
+            </div>
+            <div class="modal-body">
+              <p>Algorithm created and implemented by me. A function to check if a list of 3n size of numbers can be partitioned into a list of n triples such that the sum of each triple was the same. This program can handle a list of size 84 before throwing overflow errors due to the factorial nature of the problem. A simpler but brute force solution exists in Python using intertools, however I created a custom solution in Java without using an intertools equivalent.</p>
+              <p>
+                ex.<br>
+                given: <br>[2,4,8,12,15,2,0,6,3,2,9,1] as 2 4 8 12 15 2 0 6 3 2 9 1 <br>
+                <br>
+                the answer is true because you can partition this list as follows:<br>[(4,3,9),(15,0,1),(8,2,6),(2,2,12)]<br>
+                <br>
+                while the answer would be false for: <br>[6, -1, 8, 3455, 11, 7]<br>
+                <br>
+                The answer is also false if the length of the input list is not a multiple of 3
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a href="https://github.com/anthonyescobar/SampleWork/tree/master/ThreePartitionSolver%202:9:2016" class="btn btn-primary">View In GitHub</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="modal fade" id="bcModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- BaseConv -->
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Base Converter</h4>
-          </div>
-          <div class="modal-body" align="left">
-            <p>This program converts a given number from one base to another.</p>
-            <ul>
-              <li>args[0] represents the starting number;</li>
-              <li>args[1] represents the starting base;</li>
-              <li>args[2] represents the target base.</li>
-            </ul>
-            <b>Conversions to or from unity (base one) are not permitted. [Added 2015-09-19T17:13:00]</b></p>
-            <p>We require two or three arguments: the starting number will be specified using a special notation (below);
-            the starting and target bases must both be positive and will be given in decimal. The target base, if absent, defaults to decimal.
-            Note that the "digits" in the starting number must be consistent with the starting base. All arithmetic is done using Java type <i>long</i>, whose
-            largest value is <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html#MAX_VALUE">java.lang.Long.MAX_VALUE</a>.</p>
-            <p>In order to represent numbers from all possible bases, we employ a special notation:
-            a string like [d1][d2]...[dk] represents a k-digit number whose high-order digit has
-            value d1 (decimal), whose next digit has value d2 (decimal), etc. Here are some examples:
-                <ul>
-                    <li>The number 10110 would be represented [1][0][1][1][0].
-                    <li>The number 3204124 would be represented [3][2][0][4][1][2][4].
-                    <li>The base three number that means forty-seven would be represented [1][2][0][2].
-                    <li>The hexadecimal number for which we ordinarily write B3C would be represented [11][3][12].
-                </ul></p>
-
-            <p>So, to convert from 314 base five to base three, we would run <i>java BaseConverter [3][1][4] 5 3</i>.
-            To convert BBA326CF from hexadecimal to base twenty, we would run <i>java BaseConverter [11][11][10][3][2][6][12][15] 16 20</i>.
-            If we run <i>java BaseConverter [6][14] 26 14</i>, the output should be <i>[12][2]</i>.</p>
-            <p>The above-described special notation should also be used for outputting the target number.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <a href="https://github.com/anthonyescobar/SampleWork/tree/master/BaseConverter%209:24:2015" type="button" class="btn btn-primary">View in GitHub</a>
+      <div class="modal fade" id="mocModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- MakeOpChange -->
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Make Optimal Change</h4>
+            </div>
+            <div class="modal-body">
+              <p>When given any amount and denominations, find the most optimal way for making the given amount using the given denominations. When no such way exists, IMPOSSIBLE is returned.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a href="https://github.com/anthonyescobar/SampleWork/tree/master/MakeOptimalChange%204:23:2015" type="button" class="btn btn-primary">View In GitHub</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="modal fade" id="btModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- BinTree -->
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Binary Tree</h4>
-          </div>
-          <div class="modal-body">
-            <p>No imports, only first principles. A data structure of objects within nodes in which each node in the tree can have up to two children nodes. My binary tree implements Iterable and iterates in preorder.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <a href="https://github.com/anthonyescobar/SampleWork/tree/master/BinaryTree%2012:3:2015" type="button" class="btn btn-primary">View in GitHub</a>
+      <div class="modal fade" id="bcModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- BaseConv -->
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Base Converter</h4>
+            </div>
+            <div class="modal-body" align="left">
+              <p>This program converts a given number from one base to another.</p>
+              <ul>
+                <li>args[0] represents the starting number;</li>
+                <li>args[1] represents the starting base;</li>
+                <li>args[2] represents the target base.</li>
+              </ul>
+              <b>Conversions to or from unity (base one) are not permitted. [Added 2015-09-19T17:13:00]</b></p>
+              <p>We require two or three arguments: the starting number will be specified using a special notation (below);
+              the starting and target bases must both be positive and will be given in decimal. The target base, if absent, defaults to decimal.
+              Note that the "digits" in the starting number must be consistent with the starting base. All arithmetic is done using Java type <i>long</i>, whose
+              largest value is <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html#MAX_VALUE">java.lang.Long.MAX_VALUE</a>.</p>
+              <p>In order to represent numbers from all possible bases, we employ a special notation:
+              a string like [d1][d2]...[dk] represents a k-digit number whose high-order digit has
+              value d1 (decimal), whose next digit has value d2 (decimal), etc. Here are some examples:
+                  <ul>
+                      <li>The number 10110 would be represented [1][0][1][1][0].
+                      <li>The number 3204124 would be represented [3][2][0][4][1][2][4].
+                      <li>The base three number that means forty-seven would be represented [1][2][0][2].
+                      <li>The hexadecimal number for which we ordinarily write B3C would be represented [11][3][12].
+                  </ul></p>
+
+              <p>So, to convert from 314 base five to base three, we would run <i>java BaseConverter [3][1][4] 5 3</i>.
+              To convert BBA326CF from hexadecimal to base twenty, we would run <i>java BaseConverter [11][11][10][3][2][6][12][15] 16 20</i>.
+              If we run <i>java BaseConverter [6][14] 26 14</i>, the output should be <i>[12][2]</i>.</p>
+              <p>The above-described special notation should also be used for outputting the target number.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a href="https://github.com/anthonyescobar/SampleWork/tree/master/BaseConverter%209:24:2015" type="button" class="btn btn-primary">View in GitHub</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="modal fade" id="madlibModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- MadlibModal -->
+      <div class="modal fade" id="btModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- BinTree -->
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Binary Tree</h4>
+            </div>
+            <div class="modal-body">
+              <p>No imports, only first principles. A data structure of objects within nodes in which each node in the tree can have up to two children nodes. My binary tree implements Iterable and iterates in preorder.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a href="https://github.com/anthonyescobar/SampleWork/tree/master/BinaryTree%2012:3:2015" type="button" class="btn btn-primary">View in GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="madlibModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- MadlibModal -->
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -160,7 +160,7 @@
 
   </div>
 
-  <div class="row" align="left"> <!-- row container -->
+  <div class="row" align="left"> <!-- container -->
 
     <div class="col-xs-12 col-sm-4 col-sm-push-8 col-md-6 col-md-push-6 col-lg-7 col-lg-push-5" align="left"> <!-- sidebar -->
       <div class="panel-group" id="accordion"> <!-- Sidebar Accordion -->
@@ -313,20 +313,22 @@
     <div class="col-xs-12 col-sm-8 col-sm-pull-4 col-md-6 col-md-pull-6 col-lg-5 col-lg-pull-7"> <!-- main content -->
       <h2>Experience</h2>
       <div class="panel-group" id="accordion"> <!-- Exp Accordion -->
-        <div class="panel panel-default"> <!-- Exp Internal -->
+        <div class="panel panel-default"> <!-- Tech Internal -->
           <div class="panel-heading">
             <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse00"><h4>Industry</h4></a>
             </h4>
           </div>
-            <div id="collapse00" class="panel-collapse collapse in"> <!-- Tech Exp -->
+          <div id="collapse00" class="panel-collapse collapse in"> <!-- Tech Exp -->
             <div class="panel-body">
 
-              <h3>Frontend / Backend Software Intern<small> <br>FanFlex LLC</small></h3>
-              <p>Frontend website management and development: FanFlex.com
+              <h3>Frontend / Backend Software Intern<small> <br>FanFlex LLC.
+              <i><br>May 2016 - Present</i></small></h3>
+                <p>Frontend website management and development: FanFlex.com
                 <br>Backend PyroCMS webapp &amp; iOS app integration debugging.</p>
 
-              <h3>Technical Writer<small> <br>Loyola Marymount University ITS.</small></h3>
+              <h3>Technical Writer<small> <br>Loyola Marymount University ITS.
+              <i><br>January 2015 - May 2016</i></small></h3>
                 <p>Created user-friendly documents of LMU System Admin Software.</p>
             </div>
             <div class="panel-footer">
@@ -334,27 +336,34 @@
           </div>
         </div>
 
-        <div class="panel panel-default"> <!-- Exp Internal -->
+        <div class="panel panel-default"> <!-- Aquatic Internal -->
           <div class="panel-heading">
             <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse01"><h4>Aquatics</h4></a>
             </h4>
           </div>
-            <div id="collapse01" class="panel-collapse collapse"> <!-- Aquatic Exp -->
-          <div class="panel-body">
-            <h3>Certified Swim Instructor <small> <br>Burns Recreation Center</small></h3>
+          <div id="collapse01" class="panel-collapse collapse"> <!-- Aquatic Exp -->
+            <div class="panel-body">
+            <h3>Certified Swim Instructor <small> <br>Burns Recreation Center
+            <br><i>July 2016 - Present</i></small></h3>
             <p>Private swim instructor for Loyola Marymount’s recreation center.
               <br>Generally teach ages 3-10 of varying skill levels.</p>
 
-            <h3>Co-Founder &amp; Coach <small> <br>Creekside Water Polo Camp</small></h3>
+            <h3>Co-Founder &amp; Coach <small> <br>Creekside Water Polo Camp
+            <br><i>June - July: 2012-2015</i></small></h3>
             <p>Outreach water polo camp at a community pool to introduce teenagers to the sport, have fun, and play in high school. Two week long sessions, multiple sessions a Summer. Beginner to advanced levels. Generally 6-12 students per session, aged 12-17.</p>
 
-            <h3>Swim Instructor &amp; Pre-Competitive Coach<small> <br>De Anza Cupertino Aquatics (DACA)</small></h3>
+            <h3>Swim Instructor &amp; Pre-Competitive Coach<small><br>De Anza Cupertino Aquatics (DACA)<i><br>April 2012 - July 2014</i></small></h3>
             <p>Instructed classes of up to four students of all ages, including adult classes, with beginner to advanced skill levels. Coached a pre-competitive class of up to 8 students. Led water babies classes for children under the age of 3 and their parent. Experience with instructing autistic students. </p>
+
+            <h3>Lifeguard<small> <br>Raging Waters, San Jose
+            <i><br>March 2012 - July 2012</i></small></h3>
+            <p></p>
+
+            </div>
+            <div class="panel-footer">
+            </div>
           </div>
-          <div class="panel-footer">
-          </div>
-        </div>
         </div>
       </div>
 
@@ -419,10 +428,14 @@
           </div>
           <div id="collapse20" class="panel-collapse collapse">
             <div class="panel-body">
-              <h5>Positions</h5>
-              <h5>About Delta Sig</h5>
-              <h5>About DSP LMU</h5>
               <h5>Initiated: December 2015</h5>
+              <h5>Spring 2016 Internal &amp; External Social Chair</h5>
+              <h5>Fall 2016-Spring 2017 Delta Delta Delta (ΔΔΔ) Sweetheart</h5>
+              <p>Delta Sigma Phi is a national, not-for-profit Fraternity dedicated to the betterment of its members into high caliber gentlemen. Delta Sig was founded in 1899 on the principals of equality and mutual respect when it became the first Jewish-Christian fraternity to be founded.<br>
+              </p>
+              <h5>I am a Zeta class member of the Delta Mu chapter at Loyola Marymount University. We are a tight brotherhood dedicated to improving each other and contributing to the community around us. We pride ourselves on our diversity and pride in our brotherhood.</h5>
+              <h5>2016 Fraternity Lip Sync First Place</h5>
+              <p><b>Better Men. Better Lives.</b></p>
             </div>
             <div class="panel-footer">
             </div>
@@ -438,9 +451,14 @@
           </div>
           <div id="collapse21" class="panel-collapse collapse">
             <div class="panel-body">
-              <h5>Positions</h5>
-              <h5>About Loyola Rugby</h5>
-              <h5>My Involvement</h5>
+              <p>
+                <b>2015-2016 Executive Board: Treasurer &amp; Safety Officer</b>
+                  <br>Position: Scrum-Half/Utility-Back<br>
+                  <br>Loyola Rugby was founded at Loyola University of Los Angeles in 1958 (now Loyola Marymount) and is a member of Gold Coast Division with USA College Rugby.<br>
+                  <br>Current Gold Coast Conference Intercollegiate Rugby DII Team
+                  <br>2016 Gold Coast Conference Intercollegiate Rugby DIII Champion
+                  <br>2016 LMU Club Sport of the Year award recipient
+                </p>
             </div>
             <div class="panel-footer">
             </div>
