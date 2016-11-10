@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anthony Escobar</title>
+  <link rel="import" href="modals.html"> 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous"> bootstrap 4 alpha -->
@@ -14,27 +15,465 @@
 </head>
 <body>
 
-<div class="container-fluid" align="center"> <!-- heading -->
-  <div class="row"><div class="col-md-12" align="center"><h1>Anthony Escobar
-    <small>
-      <br><a href="https://github.com/anthonyescobar">github.com/anthonyescobar</a>
-    </small></h1></div>
-  </div>
+<!-- heading -->
+<div class="container-fluid" align="center">
+    <div class="row"><div class="col-md-12" align="center"><h1>Anthony Escobar
+      <small>
+        <br><a href="https://github.com/anthonyescobar">github.com/anthonyescobar</a>
+
+      </small></h1></div>
+    </div>
 </div>
 
-<div class="container" align="left"> <!-- content -->
-
-  <div class="row" align="center"> <!-- GitHub Modals-->
-    <br>
-    <h3>Sample Projects</h3>
-    <!-- Button trigger modal -->
+<!-- Middle Content -->
+<div class="container" align="left">
+  <!-- GitHub Modals--> 
+  <div class="row" align="center">
+    <h2>Sample Projects</h2>
+    <!-- Buttons -->
       <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#tpsModal">Three Partition Solver (Java)</button>
       <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#mocModal">Make Optimal Change (Java)</button>
       <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#bcModal">Base Converter (Java)</button>
       <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#btModal">Binary Tree (Java)</button>
       <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#madlibModal">Madlibs (x86-Assembly &amp; C)</button>
+  </div>
 
-      <div class="modal fade" id="tpsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- ThreePartSolvModal -->
+  <!-- Content Row -->
+  <div class="row" align="left">
+    
+    <!-- RH sidebar -->
+    <div class="col-xs-12 col-sm-4 col-sm-push-8 col-md-5 col-md-push-7 col-lg-5 col-lg-push-7" align="left">   
+      <!-- Skills Accordion -->
+      <div class="panel-group" id="accordion">
+        
+        <!-- Langs -->
+        <div class="panel-heading">
+          <h2 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#langSkillsAccordion"><h3 align="
+            center">Language Skils</h3></a>
+          </h2>
+        </div>
+        <div id="langSkillsAccordion" class="panel-collapse collapse in" align="center">
+          <div class="panel-body">
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+              <h4>Java</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                  Expert
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+              <h4>JavaScript</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                  Proficient
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+              <h4>HTML/CSS</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                  Proficient
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+              <h4>Python</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                  Familiar
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+              <h4>C++</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                  Familiar
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+              <h4>OCaml</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:45%">
+                  Familiar
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+              <h4>C</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                  Familiar
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+              <h4>NASM</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                  Familiar
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ops -->
+        <div class="panel-heading">
+          <h2 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#opSkillsAccordion"><h3 align="center">Operational Skills</h3></a>
+          </h2>
+        </div>
+
+        <div id="opSkillsAccordion" class="panel-collapse collapse in" align="center">
+          <div class="panel-body">
+
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+              <h4>Linux (Ubuntu)</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                  Expert
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+              <h4>Bash</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                  Proficient
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+              <h4>MacOS</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                  Expert
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Other Skills-->
+          <div class="panel-heading">
+            <h2 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#otherSkillsAccordion"><h3 align="center">Other Skills</h3></a>
+            </h2>
+          </div>
+          <div id="otherSkillsAccordion" class="panel-collapse collapse in"> 
+            <div class="panel-body">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center">
+                <h4>CPR/AED/First Aid Certified</h4>
+                  <!-- <div class="progress">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                      Woo
+                    </div>
+                  </div> Progress bar not needed -->
+              </div>
+            </div>
+          </div>    
+      </div>
+    </div>
+
+    <!-- LH sidebar -->
+    <div class="col-xs-12 col-sm-8 col-sm-pull-4 col-md-7 col-md-pull-5 col-lg-7 col-lg-pull-5"> 
+      <h2>Experience</h2>
+      <!-- Exp Accordion -->
+      <div class="panel-group" id="accordion">
+        
+        <!-- FanFlex -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#exp06"><h3>FanFlex LLC.<small><span class="pull-right"><em>May 2016 - Present</em></span><br><strong>Frontend/Backend Software Intern</strong></small></h3></a>
+            </h4>
+          </div>
+          <div id="exp06" class="panel-collapse collapse">
+            <div class="panel-body">
+                <p>Frontend website management and development: FanFlex.com
+                <br>Backend PyroCMS webapp &amp; iOS app integration debugging.</p>
+            </div>
+            <div class="panel-footer">
+            </div>
+          </div>
+        </div>
+
+        <!-- Swim Instructor -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#exp05"><h3>Burns Recreation Center<small><span class="pull-right"><em>July 2016 - Present</em></span><br><strong>Certified Swim Instructor</strong></small></h3></a>
+            </h4>
+          </div>
+          <div id="exp05" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Private swim instructor for Loyola Marymount’s recreation center.
+              <br>Generally teach ages 3-10 of varying skill levels.</p>
+            </div>
+            <div class="panel-footer">
+            </div>
+          </div>
+        </div>
+
+        <!-- SURP -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#exp04"><h3>Undergraduate Research,<small><span class="pull-right"><em>May 2016 - June 2016</em></span></small> <br> Loyola Marymount University<small><br><strong>RAINS Undergraduate Research Fellow</strong></small></h3></a>
+            </h4>
+          </div>
+          <div id="exp04" class="panel-collapse collapse">
+            <div class="panel-body">
+                  <p>2016 Summer Undergraduate Research Project
+                    <br><b>Encoding Paraconsistency</b></p>
+                  <p>I came up with this project to research the versatile uses of paraconsistent logic in decision making. This project explored organizing and computing paraconsistent logic in order to determine the feasibility of computing human decision making. I intend to design a program to parse a block of generic, unstructured text and come to conclusions out of it.<br><br>It is also my intention to research this decision making process to design a bot that can answer logic heavy questions such as ones seen on the LSAT.</p>
+            </div>
+            <div class="panel-footer">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- See More -->
+        <button type="button" class="btn btn-link btn-block" data-toggle="collapse" data-target="#seemore" align="center">See More</button>
+        <div id="seemore" class="collapse">
+          <!-- ITS -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#exp03"><h4>Loyola Marymount University ITS.<small><span class="pull-right"><em>January 2015 - May 2016</em></span><br><strong>Technical Writer</strong></small></h4></a>
+              </h4>
+            </div>
+            <div id="exp03" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Created user-friendly documents of LMU System Admin Software.</p>
+              </div>
+              <div class="panel-footer">
+              </div>
+            </div>
+          </div>
+
+          <!-- Creekside WP -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#exp02"><h4>Creekside Water Polo Camp<small><span class="pull-right"><em>June - July: 2012-2015</em></span><br><strong>Co-Founder &amp; Coach</strong></small></h4></a>
+              </h4>
+            </div>
+            <div id="exp02" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Outreach water polo camp at a community pool to introduce teenagers to the sport, have fun, and play in high school. Two week long sessions, multiple sessions a Summer. Beginner to advanced levels. Generally 6-12 students per session, aged 12-17.</p>
+              </div>
+              <div class="panel-footer">
+              </div>
+            </div>
+          </div>
+
+          <!-- DACA -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#exp01"><h4>De Anza Cupertino Aquatics<small><span class="pull-right"><em>April 2012 - July 2014</em></span><br><strong>Swim Instructor &amp; Pre-Competitive Coach</strong></small></h4></a>
+              </h4>
+            </div>
+            <div id="exp01" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Outreach water polo camp at a community pool to introduce teenagers to the sport, have fun, and play in high school. Two week long sessions, multiple sessions a Summer. Beginner to advanced levels. Generally 6-12 students per session, aged 12-17.</p>
+              </div>
+              <div class="panel-footer">
+              </div>
+            </div>
+          </div>
+
+          <!-- Raging Waters -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#exp00"><h4>Raging Waters, San Jose<small><span class="pull-right"><em>March 2012 - July 2012</em></span><br><strong>Lifeguard</strong></small></h4></a>
+              </h4>
+            </div>
+            <!-- do not open
+            <div id="exp00" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p></p>
+              </div>
+              <div class="panel-footer">
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Accordion -->
+      <h2>Education</h2>
+      <div class="panel-group" id="accordion"> 
+
+        <!-- LMU -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse10"><h3>Loyola Marymount University
+                <small><br>Bachelors of Science: Computer Science</small></h3></a>
+            </h3>
+          </div>
+          <div id="collapse10" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Expected Graduation: May 2018</h4>
+              <h4>Relevant Courses</h4>
+              <p></p>
+                <ul>
+                  <li>Theory of Computation</li>
+                  <li>Data Structures</li>
+                  <li>Algorithms</li>
+                  <li>Computer Systems Organization</li>
+                  <li>Programming Languages</li>
+                  <li>Logic Design</li>
+                  <li>Methods of Proof</li>
+                </ul>
+            </div>
+            <div class="panel-footer">
+            </div>
+          </div>
+        </div>
+
+        <!-- Foothill -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse11"><h4>Foothill College
+                <small><br>Computer Science Electives</small></h4></a>
+            </h4>
+          </div>
+          <div id="collapse11" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Relevant Courses</h4>
+              <ul><li>Introduction to Unix/Linux</li></ul>
+            </div>
+            <div class="panel-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leadership Accordion -->
+      <h2>Leadership and Involvement</h2>
+      <div class="panel-group" id="accordion">
+
+        <!-- ΔΣΦ -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse20"><h3>Delta Sigma Phi Fraternity (ΔΣΦ)<small><br>Delta Mu Chapter - Loyola Marymount University</small></h3></a>
+            </h4>
+          </div>
+          <div id="collapse20" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p><em>
+              <br>Initiated: December 2015<br>
+              <br>Spring 2016 Internal &amp; External Social Chair
+              <br>Fall 2016-Spring 2017 Delta Delta Delta (ΔΔΔ) Sweetheart
+              </em></p>
+              <p>Delta Sigma Phi is a national, not-for-profit Fraternity dedicated to the betterment of its members into high caliber gentlemen. Delta Sig was founded in 1899 on the principals of equality and mutual respect when it became the first Jewish-Christian fraternity to be founded.<br></p>
+              <p>I am a Zeta class member of the Delta Mu chapter at Loyola Marymount University. We are a tight brotherhood dedicated to improving each other and contributing to the community around us. We pride ourselves on our diversity and unity in our brotherhood.<br></p>
+              
+              <p><em>
+              2016 Fraternity Lip Sync First Place
+              </em></p>
+              <p><strong>Better Men. Better Lives. | YITBOS</strong></p>
+            </div>
+            <div class="panel-footer">
+            </div>
+          </div>
+        </div>
+
+        <!-- Loyola Rugby -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse21"><h3>Loyola Rugby of Loyola Marymount University<small><br>Executive Board</small></h3></a>
+            </h4>
+          </div>
+          <div id="collapse21" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>
+                <b>2015-2016 Executive Board: Treasurer &amp; Safety Officer</b>
+                  <em><br>On-Field Position: Scrum-Half/Utility-Back<br></em>
+                  <br>Loyola Rugby was founded at Loyola University of Los Angeles in 1958 (now Loyola Marymount) and is a member of Gold Coast Division with USA College Rugby.<br>
+                  <br>Current Gold Coast Conference Intercollegiate Rugby DII Team<br>
+                  <em><br>2016 Gold Coast Conference Intercollegiate Rugby DIII Champion
+                  <br>2016 LMU Club Sport of the Year award recipient
+                  </em>
+                </p>
+            </div>
+            <div class="panel-footer">
+            </div>
+          </div>
+        </div>
+
+        <!-- Latino Overnight -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse22"><h4>Loyola Marymount University Latino Overnight
+                <small><br>Planning Committe</small></h4></a>
+            </h4>
+          </div>
+          <div id="collapse22" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h5><i>January - March: 2015 - 2016</i></h5>
+              <h5>Latino Overnight is an event run by Loyola Marymount admissions to recruit Latino students to attend LMU. It is held once a year in the spring, inviting the admitted latino students to pursue an education at Loyola Marymount and break the stigma against latinos in the United States.</h5>
+            </div>
+            <div class="panel-footer">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Bottom -->
+<div class="container-fluid" align="center">
+  <!-- JumboTron --> 
+  <div class="jumbotron" align="center">
+    <p><a class="btn btn-primary btn-lg" href="https://dl.dropboxusercontent.com/u/29750046/1%20Page%20Resume%20-%20OnlineVer.pdf" role="button"><span class="glyphicon glyphicon-file"></span> Resume PDF</a><br>
+    <br><a href="https://www.linkedin.com/in/anthescobar">linkedin.com/in/anthescobar</a></p>
+  </div>
+</div>
+
+<!--Modals -->
+<div>
+  <!-- ThreePartSolver Modal -->
+      <div class="modal fade" id="tpsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> 
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -62,7 +501,8 @@
         </div>
       </div>
 
-      <div class="modal fade" id="mocModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- MakeOpChange -->
+      <!-- MakeOpChange Modal-->
+      <div class="modal fade" id="mocModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> 
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -80,7 +520,8 @@
         </div>
       </div>
 
-      <div class="modal fade" id="bcModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- BaseConv -->
+      <!-- BaseConv -->
+      <div class="modal fade" id="bcModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -122,7 +563,8 @@
         </div>
       </div>
 
-      <div class="modal fade" id="btModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- BinTree -->
+      <!-- BinTree -->
+      <div class="modal fade" id="btModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> 
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -140,366 +582,24 @@
         </div>
       </div>
 
-      <div class="modal fade" id="madlibModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <!-- MadlibModal -->
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Madlibs</h4>
-          </div>
-          <div class="modal-body">
-            <p>Arguments are processed in assembly and piped to the C file to compute. This program will take arguments and insert them into the given statement at its index number. This program supports up to 10 arguments to madlib (digits 0-9) and if the argmument length does not reach a given number then the number is unchanged.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <a href="https://github.com/anthonyescobar/SampleWork/tree/master/Madlibs%205:3:2016" type="button" class="btn btn-primary">View in GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="row" align="left"> <!-- container -->
-
-    <div class="col-xs-12 col-sm-4 col-sm-push-8 col-md-6 col-md-push-6 col-lg-7 col-lg-push-5" align="left"> <!-- sidebar -->
-      <div class="panel-group" id="accordion"> <!-- Sidebar Accordion -->
-        <div class="panel-heading">
-          <h2 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSide01"><h3>Languages<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h3></a>
-          </h2>
-        </div>
-        <div id="collapseSide01" class="panel-collapse collapse in"> <!-- Langs -->
-          <div class="panel-body">
-
-          <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h4>Java</h4>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar"
-                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                  Expert
-                </div>
-              </div>
+      <!-- MadlibModal -->
+      <div class="modal fade" id="madlibModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> 
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Madlibs</h4>
             </div>
-
-          <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h4>JavaScript</h4>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar"
-                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                  Proficient
-                </div>
-              </div>
+            <div class="modal-body">
+              <p>Arguments are processed in assembly and piped to the C file to compute. This program will take arguments and insert them into the given statement at its index number. This program supports up to 10 arguments to madlib (digits 0-9) and if the argmument length does not reach a given number then the number is unchanged.</p>
             </div>
-
-          <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h4>HTML/CSS</h4>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar"
-                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                  Proficient
-                </div>
-              </div>
-            </div>
-
-          <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h4>Python</h4>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar"
-                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                  Familiar
-                </div>
-              </div>
-            </div>
-
-          <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h4>C++</h4>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar"
-                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                  Familiar
-                </div>
-              </div>
-            </div>
-
-          <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h4>OCaml</h4>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar"
-                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:45%">
-                  Familiar
-                </div>
-              </div>
-            </div>
-
-          <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h4>C</h4>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar"
-                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                  Familiar
-                </div>
-              </div>
-            </div>
-
-          <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-            <h4>NASM</h4>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar"
-                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                  Familiar
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-          <div class="panel-heading">
-            <h2 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseSide02"><h3>Operational<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h3></a>
-            </h2>
-          </div>
-
-      <div id="collapseSide02" class="panel-collapse collapse in"> <!-- Ops -->
-        <div class="panel-body">
-
-        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-          <h4>Linux/Unix</h4>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar"
-              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                Expert
-              </div>
-            </div>
-          </div>
-
-        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
-          <h4>Bash</h4>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar"
-              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                Proficient
-              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a href="https://github.com/anthonyescobar/SampleWork/tree/master/Madlibs%205:3:2016" type="button" class="btn btn-primary">View in GitHub</a>
             </div>
           </div>
         </div>
       </div>
-
-        <div class="panel-heading">
-          <h2 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSide03"><h3>Other<i
-            class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h3></a>
-          </h2>
-        </div>
-
-      <div id="collapseSide03" class="panel-collapse collapse in"> <!-- Other -->
-        <div class="panel-body">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center">
-            <h4>CPR/AED/First Aid Certified</h4>
-              <!-- <div class="progress">
-                <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
-                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-                  Woo
-                </div>
-              </div> Progress bar not needed -->
-          </div>
-        </div>
-      </div>
-
-      </div>
-
-    </div>
-
-    <div class="col-xs-12 col-sm-8 col-sm-pull-4 col-md-6 col-md-pull-6 col-lg-5 col-lg-pull-7"> <!-- main content -->
-      <h2>Experience</h2>
-      <div class="panel-group" id="accordion"> <!-- Exp Accordion -->
-        <div class="panel panel-default"> <!-- Tech Internal -->
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse00"><h4>Industry</h4></a>
-            </h4>
-          </div>
-          <div id="collapse00" class="panel-collapse collapse in"> <!-- Tech Exp -->
-            <div class="panel-body">
-
-              <h3>Frontend / Backend Software Intern<small> <br>FanFlex LLC.
-              <i><br>May 2016 - Present</i></small></h3>
-                <p>Frontend website management and development: FanFlex.com
-                <br>Backend PyroCMS webapp &amp; iOS app integration debugging.</p>
-
-                <h3>RAINS Undergraduate Research Fellow<small> <br>Loyola Marymount University
-                <i><br>May 2016 - June 2016</i></small></h3>
-                  <p>2016 Summer Undergraduate Research Project
-                    <br><b>Encoding Paraconsistency</b></p>
-                  <p>I came up with this project to research the versatile uses of paraconsistent logic in decision making. This project explored organizing and computing paraconsistent logic in order to determine the feasibility of computing human decision making. I intend to design a program to parse a block of generic, unstructured text and come to conclusions out of it.<br><br>It is also my intention to research this decision making process to design a bot that can answer logic heavy questions such as ones seen on the LSAT.</p>
-
-                <h3>Technical Writer<small> <br>Loyola Marymount University ITS.
-                <i><br>January 2015 - May 2016</i></small></h3>
-                  <p>Created user-friendly documents of LMU System Admin Software.</p>
-            </div>
-            <div class="panel-footer">
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-default"> <!-- Aquatic Internal -->
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse01"><h4>Aquatics</h4></a>
-            </h4>
-          </div>
-          <div id="collapse01" class="panel-collapse collapse"> <!-- Aquatic Exp -->
-            <div class="panel-body">
-            <h3>Certified Swim Instructor <small> <br>Burns Recreation Center
-            <br><i>July 2016 - Present</i></small></h3>
-            <p>Private swim instructor for Loyola Marymount’s recreation center.
-              <br>Generally teach ages 3-10 of varying skill levels.</p>
-
-            <h3>Co-Founder &amp; Coach <small> <br>Creekside Water Polo Camp
-            <br><i>June - July: 2012-2015</i></small></h3>
-            <p>Outreach water polo camp at a community pool to introduce teenagers to the sport, have fun, and play in high school. Two week long sessions, multiple sessions a Summer. Beginner to advanced levels. Generally 6-12 students per session, aged 12-17.</p>
-
-            <h3>Swim Instructor &amp; Pre-Competitive Coach<small><br>De Anza Cupertino Aquatics (DACA)<i><br>April 2012 - July 2014</i></small></h3>
-            <p>Instructed classes of up to four students of all ages, including adult classes, with beginner to advanced skill levels. Coached a pre-competitive class of up to 8 students. Led water babies classes for children under the age of 3 and their parent. Experience with instructing autistic students. </p>
-
-            <h3>Lifeguard<small> <br>Raging Waters, San Jose
-            <i><br>March 2012 - July 2012</i></small></h3>
-            <p></p>
-
-            </div>
-            <div class="panel-footer">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h2>Education</h2>
-      <div class="panel-group" id="accordion"> <!-- Education Accordion -->
-
-        <div class="panel panel-default"> <!-- LMU -->
-          <div class="panel-heading">
-            <h3 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse10"><h3>Loyola Marymount University
-                <small><br>Bachelors of Science: Computer Science</small></h3></a>
-            </h3>
-          </div>
-          <div id="collapse10" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>Expected Graduation: May 2018</h4>
-              <h4>Relevant Courses</h4>
-              <p></p>
-                <ul>
-                  <li>Theory of Computation</li>
-                  <li>Data Structuress</li>
-                  <li>Algorithms</li>
-                  <li>Computer Systems Organization</li>
-                  <li>Programming Languages</li>
-                  <li>Logic Design</li>
-                  <li>Methods of Proof</li>
-                </ul>
-            </div>
-            <div class="panel-footer">
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-default"><!-- Foothill -->
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse11"><h4>Foothill College
-                <small><br>Computer Science Electives</small></h4></a>
-            </h4>
-          </div>
-          <div id="collapse11" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>Relevant Courses</h4>
-              <ul><li>Introduction to Unix/Linux</li></ul>
-            </div>
-            <div class="panel-footer">
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <h2>Leadership and Involvement</h2>
-      <div class="panel-group" id="accordion"> <!-- Leadership Accordion -->
-
-        <div class="panel panel-default"> <!-- ΔΣΦ -->
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse20"><h4>Delta Sigma Phi Fraternity (ΔΣΦ)
-                <small><br>Delta Mu Chapter - Loyola Marymount University</small></h4></a>
-            </h4>
-          </div>
-          <div id="collapse20" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h5>Initiated: December 2015</h5>
-              <h5>Spring 2016 Internal &amp; External Social Chair</h5>
-              <h5>Fall 2016-Spring 2017 Delta Delta Delta (ΔΔΔ) Sweetheart</h5>
-              <p>Delta Sigma Phi is a national, not-for-profit Fraternity dedicated to the betterment of its members into high caliber gentlemen. Delta Sig was founded in 1899 on the principals of equality and mutual respect when it became the first Jewish-Christian fraternity to be founded.<br>
-              </p>
-              <h5>I am a Zeta class member of the Delta Mu chapter at Loyola Marymount University. We are a tight brotherhood dedicated to improving each other and contributing to the community around us. We pride ourselves on our diversity and pride in our brotherhood.</h5>
-              <h5>2016 Fraternity Lip Sync First Place</h5>
-              <p><b>Better Men. Better Lives. | YITBOS</b></p>
-            </div>
-            <div class="panel-footer">
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-default"> <!-- Loyola Rugby -->
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse21"><h4>Executive Board
-                <small><br>Loyola Rugby of Loyola Marymount University</small></h4></a>
-            </h4>
-          </div>
-          <div id="collapse21" class="panel-collapse collapse">
-            <div class="panel-body">
-              <p>
-                <b>2015-2016 Executive Board: Treasurer &amp; Safety Officer</b>
-                  <br>Position: Scrum-Half/Utility-Back<br>
-                  <br>Loyola Rugby was founded at Loyola University of Los Angeles in 1958 (now Loyola Marymount) and is a member of Gold Coast Division with USA College Rugby.<br>
-                  <br>Current Gold Coast Conference Intercollegiate Rugby DII Team
-                  <br>2016 Gold Coast Conference Intercollegiate Rugby DIII Champion
-                  <br>2016 LMU Club Sport of the Year award recipient
-                </p>
-            </div>
-            <div class="panel-footer">
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-default"> <!-- Latino Overnight -->
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse22"><h4>Planning Committee
-                <small><br>Loyola Marymount University Latino Overnight</small></h4></a>
-            </h4>
-          </div>
-          <div id="collapse22" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h5>Event run by admissions to recruit Latino students to attend LMU</h5>
-            </div>
-            <div class="panel-footer">
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div> <!-- end main content column-->
-
-  </div> <!-- end encapule row -->
-
-</div>
-
-<div class="container-fluid" align="center"> <!-- Bottom -->
-  <div class="jumbotron" align="center"> <!-- JumboTron -->
-    <p><br><a class="btn btn-primary btn-lg" href="https://dl.dropboxusercontent.com/u/29750046/1%20Page%20Resume%20-%20OnlineVer.pdf" role="button"><span class="glyphicon glyphicon-file"></span> Resume PDF</a>
-    <p></p>
-  </div>
 </div>
 
 </body>
