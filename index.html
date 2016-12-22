@@ -32,9 +32,10 @@
     <h2>Sample Code</h2>
     <!-- Buttons -->
       <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#tpsModal">Three Partition Solver (Java)</button>
+      <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#wiModal">Word Indexer (Python)</button>
       <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#mocModal">Make Optimal Change (Java)</button>
       <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#bcModal">Base Converter (Java)</button>
-      <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#btModal">Binary Tree (Java)</button>
+      <!-- <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#btModal">Binary Tree (Java)</button> -->
       <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#madlibModal">Madlibs (x86-Assembly &amp; C)</button>
   </div>
 
@@ -509,6 +510,48 @@
         </div>
       </div>
 
+      <!-- WordIndexer -->
+      <div class="modal fade" id="wiModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> 
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Binary Tree</h4>
+            </div>
+            <div class="modal-body">
+              <p>Python program that builds an index of one or more files, and then lets the user interactively query the index to look up the occurrences of words, print out a particular occurrence, or output the entire index.</p>
+              <p>
+                Interactive commands:<br>
+                <ul>
+                  words [prefix]<br>
+                    -- Prints all the words in the index that start with with [prefix].<br>
+                    -- If [prefix] is empty, print all the words.<br>
+                    <br>
+                  occurrences [word]<br>
+                    -- Print the occurrences of a word. The occurrences should be ordered<br>
+                    -- first by filename (alphabetically), then by line number, then by<br>
+                    -- position within the line. Each occurrence should be numbered, to make<br>
+                    -- it easy to refer to it in the "context" command. Each occurrence should<br>
+                    -- be listed on its own line, indented two spaces.<br>
+                    <br>
+                  output
+                    -- Print the entire index to standard output (sys.stdout). The index<br>
+                    -- should be output in alphabetical order. Print each word on its own<br>
+                    -- line, and then followed by its occurrences as for the occurrences command.<br>
+                    <br>
+                  quit<br>
+                    -- Exit the program<br>
+                </ul>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a href="https://github.com/anthonyescobar/SampleWork/tree/master/BinaryTree%2012:3:2015" type="button" class="btn btn-primary">View in GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- MakeOpChange Modal-->
       <div class="modal fade" id="mocModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> 
         <div class="modal-dialog" role="document">
@@ -582,7 +625,7 @@
       </div>
 
       <!-- BinTree -->
-      <div class="modal fade" id="btModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> 
+      <!-- <div class="modal fade" id="btModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> 
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -598,7 +641,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- MadlibModal -->
       <div class="modal fade" id="madlibModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> 
