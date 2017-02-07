@@ -219,6 +219,36 @@
               </div>
             </div>
 
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+              <h4>Unity</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                  Proficient
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+              <h4>Unreal</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                  Proficient
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
+              <h4>ADB</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                  Expert
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -254,24 +284,29 @@
         <!-- LMU -->
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse10"><h3>Loyola Marymount University
-                <small><br>Bachelors of Science: Computer Science<br>Minor: Animation</small></h3></a>
-            </h3>
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse10"><h3>Loyola Marymount University<small><span class="pull-right"><em>Expected: May 2018</em></span><br>Bachelors of Science: Computer Science<br>Minor: Animation</small></h3></a>
+            </h4>
           </div>
           <div id="collapse10" class="panel-collapse collapse">
             <div class="panel-body">
-              <h4>Expected Graduation: May 2018</h4>
               <h4>Relevant Courses</h4>
               <p></p>
                 <ul>
+                  <li>Lang Translation &amp; Implementation</li>
+                  <li>Operating Systems</li>
+                  <li>Computer Graphics</li>
                   <li>Theory of Computation</li>
                   <li>Data Structures</li>
                   <li>Algorithms</li>
                   <li>Computer Systems Organization</li>
                   <li>Programming Languages</li>
                   <li>Logic Design</li>
+                  <li>Computer System Design</li>
                   <li>Methods of Proof</li>
+                  <li>Discrete Methods</li>
+                  <li>Animation Pipeline Architecture</li>
+                  <li>Video Game Sound Design</li>
                 </ul>
                 <p><em>Awarded LMU Achievement Award Scholarship</em></p>
             </div>
@@ -291,7 +326,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#exp06"><h3>FanFlex LLC.<small><span class="pull-right"><em>May 2016 - Present</em></span><br><strong>Frontend/Backend Software Intern</strong></small></h3></a>
+              <a data-toggle="collapse" data-parent="#accordion" href="#exp06"><h3>FanFlex LLC.<small><span class="pull-right"><em>May 2016 - December 2016</em></span><br><strong>Frontend/Backend Software Intern</strong></small></h3></a>
             </h4>
           </div>
           <div id="exp06" class="panel-collapse collapse">
@@ -535,13 +570,13 @@
               <p>Algorithm created and implemented by me. A function to check if a list of 3n size of numbers can be partitioned into a list of n triples such that the sum of each triple was the same. This program can handle a list of size 84 before throwing overflow errors due to the factorial nature of the problem. A simpler but brute force solution exists in Python using intertools, however I created a custom solution in Java without using an intertools equivalent.</p>
               <p>
                 ex.<br>
-                given: <br>[2,4,8,12,15,2,0,6,3,2,9,1] as 2 4 8 12 15 2 0 6 3 2 9 1 <br>
+                given: <br><code>[2,4,8,12,15,2,0,6,3,2,9,1]</code> as <code>2 4 8 12 15 2 0 6 3 2 9 1 </code>.<br>
                 <br>
-                the answer is true because you can partition this list as follows:<br>[(4,3,9),(15,0,1),(8,2,6),(2,2,12)]<br>
+                ThreePartitionSolver will output <code>true</code> because you can partition this list as follows:<br><code>[(4,3,9),(15,0,1),(8,2,6),(2,2,12)]</code>.<br>
                 <br>
-                while the answer would be false for: <br>[6, -1, 8, 3455, 11, 7]<br>
+                while the output would be <code>false</code> for: <br><code>[6, -1, 8, 3455, 11, 7]</code>.<br>
                 <br>
-                The answer is also false if the length of the input list is not a multiple of 3
+                The output is also always <code>false</code> if the length of the input list is not a multiple of 3.
               </p>
             </div>
             <div class="modal-footer">
@@ -565,23 +600,23 @@
               <p>
                 Interactive commands:<br>
                 <ul>
-                  words [prefix]<br>
+                  <code>words [prefix]</code><br>
                     -- Prints all the words in the index that start with with [prefix].<br>
                     -- If [prefix] is empty, print all the words.<br>
                     <br>
-                  occurrences [word]<br>
+                  <code>occurrences [word]</code><br>
                     -- Print the occurrences of a word. The occurrences should be ordered<br>
                     -- first by filename (alphabetically), then by line number, then by<br>
                     -- position within the line. Each occurrence should be numbered, to make<br>
                     -- it easy to refer to it in the "context" command. Each occurrence should<br>
                     -- be listed on its own line, indented two spaces.<br>
                     <br>
-                  output
+                  <code>output</code><br>
                     -- Print the entire index to standard output (sys.stdout). The index<br>
                     -- should be output in alphabetical order. Print each word on its own<br>
                     -- line, and then followed by its occurrences as for the occurrences command.<br>
                     <br>
-                  quit<br>
+                  <code>quit</code><br>
                     -- Exit the program<br>
                 </ul>
               </p>
@@ -634,28 +669,27 @@
             <div class="modal-body" align="left">
               <p>This program converts a given number from one base to another.</p>
               <ul>
-                <li>args[0] represents the starting number;</li>
-                <li>args[1] represents the starting base;</li>
-                <li>args[2] represents the target base.</li>
+                <li><code>args[0]</code> represents the starting number;</li>
+                <li><code>args[1]</code> represents the starting base;</li>
+                <li><code>args[2]</code> represents the target base.</li>
               </ul>
-              <b>Conversions to or from unity (base one) are not permitted. [Added 2015-09-19T17:13:00]</b></p>
               <p>We require two or three arguments: the starting number will be specified using a special notation (below);
               the starting and target bases must both be positive and will be given in decimal. The target base, if absent, defaults to decimal.
               Note that the "digits" in the starting number must be consistent with the starting base. All arithmetic is done using Java type <i>long</i>, whose
               largest value is <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html#MAX_VALUE">java.lang.Long.MAX_VALUE</a>.</p>
               <p>In order to represent numbers from all possible bases, we employ a special notation:
-              a string like [d1][d2]...[dk] represents a k-digit number whose high-order digit has
+              a string like <code>[d1][d2]...[dk]</code> represents a k-digit number whose high-order digit has
               value d1 (decimal), whose next digit has value d2 (decimal), etc. Here are some examples:
                   <ul>
-                      <li>The number 10110 would be represented [1][0][1][1][0].
-                      <li>The number 3204124 would be represented [3][2][0][4][1][2][4].
-                      <li>The base three number that means forty-seven would be represented [1][2][0][2].
-                      <li>The hexadecimal number for which we ordinarily write B3C would be represented [11][3][12].
+                      <li>The number <code>10110</code> would be represented <code>[1][0][1][1][0]</code>.
+                      <li>The number <code>3204124</code> would be represented <code>[3][2][0][4][1][2][4]</code>.
+                      <li>The <code>base three number that means forty-seven</code> would be represented <code>[1][2][0][2]</code>.
+                      <li>The hexadecimal number for which we ordinarily write <code>B3C</code> would be represented <code>[11][3][12]</code>.
                   </ul></p>
 
-              <p>So, to convert from 314 base five to base three, we would run <i>java BaseConverter [3][1][4] 5 3</i>.
-              To convert BBA326CF from hexadecimal to base twenty, we would run <i>java BaseConverter [11][11][10][3][2][6][12][15] 16 20</i>.
-              If we run <i>java BaseConverter [6][14] 26 14</i>, the output should be <i>[12][2]</i>.</p>
+              <p>So, to convert from 314 base five to base three, we would run <code>java BaseConverter [3][1][4] 5 3</code>.<br>
+              To convert BBA326CF from hexadecimal to base twenty, we would run <code>java BaseConverter [11][11][10][3][2][6][12][15] 16 20</code>.<br>
+              If we run <code>java BaseConverter [6][14] 26 14</code>, the output should be <code>[12][2]</code>.</p>
               <p>The above-described special notation should also be used for outputting the target number.</p>
             </div>
             <div class="modal-footer">
